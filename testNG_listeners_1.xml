@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--    listeners tag should be used to run test cases with listeners-->
+    <listeners>
+        <listener class-name="myapp.utilities.ListenersUtil"></listener>
+    </listeners>
+    <!--    We linked the above listener utils and below test cases-->
+    <test verbose="2" preserve-order="true"
+          name="/Users/techproed/IdeaProjects/mytestNGproject/src/test/java/myapp/tests/listeners/Day17_Listeners1.java">
+        <classes>
+            <class name="myapp.tests.listeners.Day17_Listeners1">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

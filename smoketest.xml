@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="4">
+    <test name="Smoke Test 1">
+        <packages>
+            <package name="myapp.tests.smoketest" />
+            <package name="myapp.tests.smoketest.excelatautomation" />
+        </packages>
+    </test>
+</suite>
+        <!--
+            1. xml files are used to run test classes
+            2. suite > test > package > groups > class > method
+            3. verbose is the amount of info you see on the console
+            4. Save the xml file before you run, otherwise you may not see results
+            5. If path is not correct then we see No tests were found error message
+        -->

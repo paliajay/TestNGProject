@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+    <test name="Regression1">
+        <classes>
+            <!--            Class 1 Methods-->
+            <class name="myapp.tests.topics.Day15_OrangeHRMLoginTest">
+                <methods>
+                    <!--                    run only orangeHRMLoginTest-->
+                    <include name="orangeHRMLoginTest"/>
+                </methods>
+            </class>
+            <!--            Class 2 methods-->
+            <class name="myapp.tests.topics.Day13_Annotations">
+                <methods>
+                    <!--                    run only test4 and test5-->
+                    <include name="test4"/>
+                    <include name="test5"/>
+                </methods>
+            </class>
+            <!--            Class 3 methods-->
+            <class name="myapp.tests.dataprovider.Day16_DataProvider1">
+                <methods>
+                    <!--                    run ALL but test2-->
+                    <exclude name="test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

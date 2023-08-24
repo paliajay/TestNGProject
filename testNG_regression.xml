@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="4">
+    <test name="Smoke Test 1">
+        <packages>
+            <!--            run all packages under myapp-->
+            <package name="myapp.*" />
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+    <test name="Regression1"   >
+        <!--        group names-->
+        <groups>
+            <run>
+                <include name="minor-regression-1"/>
+            </run>
+        </groups>
+        <!--        package names. * =ALL -->
+        <packages>
+            <package name="myapp.tests.*" />
+        </packages>
+    </test>
+</suite>
+        <!--
+            Day16_DataProvider test1 and test2 -> @Test(groups="minor-regression-1")
+            Day13_Annotations test1 and test5 -> @Test(groups="minor-regression-1")
+        -->

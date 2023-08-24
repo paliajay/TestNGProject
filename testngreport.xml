@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/testNGProject/src/test/java/myapp/tests/smoketest">
+        <classes>
+            <class name="myapp.tests.smoketest.Day15_PositiveLoginTest">
+                <methods>
+                    <include name="US100201_Admin_Login"/>
+                </methods>
+            </class>
+            <class name="myapp.tests.smoketest.excelatautomation.Day16_ExcelAutomation">
+                <methods>
+                    <include name="appLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
